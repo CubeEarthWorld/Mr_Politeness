@@ -10,18 +10,18 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Custom"
+        android:theme="@style/Theme.Politeness"
         tools:targetApi="31">
 
         <!-- AdMob App ID -->
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="広告ID"/>
+            android:value=""/>
 
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:theme="@style/Theme.Custom">
+            android:theme="@style/Theme.Politeness">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
