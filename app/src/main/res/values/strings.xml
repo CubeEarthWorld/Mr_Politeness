@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <!-- App Bar Title -->
     <string name="app_name">Mr: Politeness</string>
 
@@ -22,7 +22,7 @@
     <string name="copied_toast">Copied to clipboard</string>
 
     <!-- Popup Menu -->
-    <string name="popup_title">Information</string>
+    <string name="popup_title" tools:ignore="MissingTranslation">Information</string>
     <string name="popup_text">
         Privacy Policy
         1. Data Collection and Use
