@@ -1,0 +1,64 @@
+<resources>
+    <!-- App Bar Title -->
+    <string name="app_name">Señor Cortés</string>
+
+    <!-- Text Field Labels -->
+    <string name="input_label">Introduce tu texto horrible (%1$d)</string>
+    <string name="output_label">Texto Corregido (%1$d)</string>
+    <string name="input_label_no_input">Introduce tu texto horrible</string>
+    <string name="output_label_no_input">Texto Corregido</string>
+    <string name="can_mistakes">LLM puede cometer errores. Por favor, verifica las respuestas.</string>
+
+
+    <!-- Button Text -->
+    <string name="execute_button">Ejecutar</string>
+
+    <!-- Icon Button Descriptions -->
+    <string name="clear_description">Borrar</string>
+    <string name="paste_description">Pegar</string>
+    <string name="copy_description">Copiar</string>
+
+    <!-- Toast Message -->
+    <string name="copied_toast">Copiado al portapapeles</string>
+    <string name="close_button">Cerrar</string>
+
+    <string name="popup_text">
+        Política de privacidad
+        1. Recopilación y uso de datos
+        Esta aplicación utiliza LLM de Google (Gemini) y AdMob. Estos servicios pueden recopilar datos para proporcionar la funcionalidad de la aplicación y mostrar anuncios, pero no recopilamos datos de los usuarios para otros fines.
+
+        2. Manejo de información personal
+        Ni el desarrollador ni sus asociados recopilan información personal del usuario o contenidos enviados.
+
+        3. Privacidad y publicidad de Google
+        Gemini: La generación de texto es proporcionada por Gemini de Google. Consulte la política de privacidad de Gemini para más detalles.
+        AdMob: Usamos AdMob para mostrar anuncios. Consulte la política de privacidad de AdMob para más información.
+
+        Sobre software de código abierto:
+        Esta aplicación utiliza el siguiente software de código abierto, que se utiliza bajo sus respectivas licencias.
+        androidx.core:core-ktx
+        androidx.lifecycle:lifecycle-runtime-ktx
+        androidx.activity:activity-compose
+        androidx.compose:compose-bom (BOM)
+        androidx.ui:ui
+        androidx.ui:ui-graphics
+        androidx.ui:ui-tooling-preview
+        androidx.material3:material3
+        androidx.lifecycle:lifecycle-viewmodel-compose
+        androidx.runtime:livedata
+        billing
+        generativeai:generative-ai
+        junit:junit
+        androidx.junit:androidx.junit
+        androidx.espresso:espresso-core
+        androidx.compose:compose-bom (BOM)
+        androidx.ui:ui-test-junit4
+        androidx.ui:ui-tooling
+        androidx.ui:ui-test-manifest
+        com.google.android.gms:play-services-ads
+</string>
+
+
+    <!-- High Accuracy Mode -->
+    <string name="high_accuracy_mode">Modo de Alta Precisión</string>
+</resources>

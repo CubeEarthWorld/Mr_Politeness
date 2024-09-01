@@ -1,0 +1,63 @@
+<resources>
+    <!-- App Bar Title -->
+    <string name="app_name">敬語に翻訳</string>
+
+    <!-- Text Field Labels -->
+    <string name="input_label">ダメダメな文章を入力 (%1$d)</string>
+    <string name="output_label">修正後のテキスト (%1$d)</string>
+    <string name="input_label_no_input">ダメダメな文章を入力</string>
+    <string name="output_label_no_input">修正後のテキスト</string>
+    <string name="can_mistakes">LLMは間違いを犯す可能性があります。必ず返答をチェックしてください。</string>
+
+    <!-- Button Text -->
+    <string name="execute_button">実行</string>
+
+    <!-- Icon Button Descriptions -->
+    <string name="clear_description">クリア</string>
+    <string name="paste_description">貼り付け</string>
+    <string name="copy_description">コピー</string>
+
+    <string name="popup_text">
+        プライバシーポリシー
+        1. データ収集と使用
+        本アプリは、GoogleのLLM（Gemini）およびAdMobを使用しています。これらのサービスは、アプリの機能提供および広告表示のためにデータを収集することがありますが、私たちはそれ以外の目的でユーザーのデータを収集することはありません。
+
+        2. 個人情報の取り扱い
+        開発者とその関係者がユーザーの個人情報や送信内容を収集することはありません。
+
+        3. Googleのプライバシーと広告
+        Gemini: 文章の生成にはGoogleのGeminiを利用しています。Geminiに関してはGeminiのプライバシーポリシーをご覧ください。
+        AdMob: AdMobを利用して広告を表示しています。AdMobに関してはAdmobのプライバシーポリシーをご覧ください。
+
+        オープンソースソフトウェアに関して:
+        本アプリでは以下のオープンソースソフトウェアを使用しています。これらのソフトウェアは、各ライセンスに基づき利用されています。
+        androidx.core:core-ktx
+        androidx.lifecycle:lifecycle-runtime-ktx
+        androidx.activity:activity-compose
+        androidx.compose:compose-bom (ボム)
+        androidx.ui:ui
+        androidx.ui:ui-graphics
+        androidx.ui:ui-tooling-preview
+        androidx.material3:material3
+        androidx.lifecycle:lifecycle-viewmodel-compose
+        androidx.runtime:livedata
+        billing
+        generativeai:generative-ai
+        junit:junit
+        androidx.junit:androidx.junit
+        androidx.espresso:espresso-core
+        androidx.compose:compose-bom (ボム)
+        androidx.ui:ui-test-junit4
+        androidx.ui:ui-tooling
+        androidx.ui:ui-test-manifest
+        com.google.android.gms:play-services-ads</string>
+
+    <!-- Toast Message -->
+    <string name="copied_toast">コピーしました</string>
+
+    <string name="popup_title">情報</string>
+    <string name="close_button">閉じる</string>
+
+    <!-- High Accuracy Mode -->
+    <string name="high_accuracy_mode">高精度モード</string>
+</resources>

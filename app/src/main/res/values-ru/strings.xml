@@ -1,0 +1,64 @@
+<resources>
+    <!-- App Bar Title -->
+    <string name="app_name">Господин Вежливость</string>
+
+    <!-- Text Field Labels -->
+    <string name="input_label">Введите ваш никчёмный текст (%1$d)</string>
+    <string name="output_label">Исправленный текст (%1$d)</string>
+    <string name="input_label_no_input">Введите ваш никчёмный текст</string>
+    <string name="output_label_no_input">Исправленный текст</string>
+    <string name="can_mistakes">LLM может совершать ошибки. Пожалуйста, проверьте ответы еще раз.</string>
+
+
+    <!-- Button Text -->
+    <string name="execute_button">Выполнить</string>
+
+    <!-- Icon Button Descriptions -->
+    <string name="clear_description">Очистить</string>
+    <string name="paste_description">Вставить</string>
+    <string name="copy_description">Копировать</string>
+
+    <!-- Toast Message -->
+    <string name="copied_toast">Скопировано в буфер обмена</string>
+    <string name="close_button">Закрыть</string>
+
+    <string name="popup_text">
+        Политика конфиденциальности
+        1. Сбор и использование данных
+        Это приложение использует LLM Google (Gemini) и AdMob. Эти сервисы могут собирать данные для обеспечения функциональности приложения и показа рекламы, но мы не собираем данные пользователей для других целей.
+
+        2. Обработка персональных данных
+        Разработчик и его партнеры не собирают личные данные пользователей или отправляемый контент.
+
+        3. Конфиденциальность и реклама Google
+        Gemini: Генерация текста осуществляется с помощью Google Gemini. Пожалуйста, ознакомьтесь с политикой конфиденциальности Gemini для получения дополнительной информации.
+        AdMob: Мы используем AdMob для показа рекламы. Пожалуйста, ознакомьтесь с политикой конфиденциальности AdMob для получения дополнительной информации.
+
+        Об использовании открытого программного обеспечения:
+        Это приложение использует следующее программное обеспечение с открытым исходным кодом, которое используется в соответствии с их лицензиями.
+        androidx.core:core-ktx
+        androidx.lifecycle:lifecycle-runtime-ktx
+        androidx.activity:activity-compose
+        androidx.compose:compose-bom (BOM)
+        androidx.ui:ui
+        androidx.ui:ui-graphics
+        androidx.ui:ui-tooling-preview
+        androidx.material3:material3
+        androidx.lifecycle:lifecycle-viewmodel-compose
+        androidx.runtime:livedata
+        billing
+        generativeai:generative-ai
+        junit:junit
+        androidx.junit:androidx.junit
+        androidx.espresso:espresso-core
+        androidx.compose:compose-bom (BOM)
+        androidx.ui:ui-test-junit4
+        androidx.ui:ui-tooling
+        androidx.ui:ui-test-manifest
+        com.google.android.gms:play-services-ads
+</string>
+
+
+    <!-- High Accuracy Mode -->
+    <string name="high_accuracy_mode">Режим высокой точности</string>
+</resources>

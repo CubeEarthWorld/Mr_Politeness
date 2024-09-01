@@ -1,0 +1,65 @@
+<resources>
+    <!-- App Bar Title -->
+    <string name="app_name">Mr: Politeness</string>
+
+    <!-- Text Field Labels -->
+    <string name="input_label">Enter your not-so-great text (%1$d)</string>
+    <string name="output_label">Corrected Text (%1$d)</string>
+    <string name="input_label_no_input">Enter your not-so-great text</string>
+    <string name="output_label_no_input">Corrected Text</string>
+    <string name="can_mistakes">LLM can make mistakes. Please double-check responses.</string>
+
+
+    <!-- Button Text -->
+    <string name="execute_button">Execute</string>
+
+    <!-- Icon Button Descriptions -->
+    <string name="clear_description">Clear</string>
+    <string name="paste_description">Paste</string>
+    <string name="copy_description">Copy</string>
+
+    <!-- Toast Message -->
+    <string name="copied_toast">Copied to clipboard</string>
+
+    <!-- Popup Menu -->
+    <string name="popup_title">Information</string>
+    <string name="popup_text">
+        Privacy Policy
+        1. Data Collection and Use
+        This app uses Google LLM (Gemini) and AdMob. These services may collect data to provide app functionality and display advertisements, but we do not collect user data for any other purposes.
+
+        2. Handling of Personal Information
+        Neither the developer nor any associates collect user personal information or content submissions.
+
+        3. Google Privacy and Advertising
+        Gemini: Text generation is powered by Google Gemini. Please refer to Gemini privacy policy for more details.
+        AdMob: We use AdMob to display advertisements. Please refer to AdMob privacy policy for more information.
+
+        Regarding Open Source Software:
+        This app uses the following open-source software, which is utilized under their respective licenses.
+        androidx.core:core-ktx
+        androidx.lifecycle:lifecycle-runtime-ktx
+        androidx.activity:activity-compose
+        androidx.compose:compose-bom (BOM)
+        androidx.ui:ui
+        androidx.ui:ui-graphics
+        androidx.ui:ui-tooling-preview
+        androidx.material3:material3
+        androidx.lifecycle:lifecycle-viewmodel-compose
+        androidx.runtime:livedata
+        billing
+        generativeai:generative-ai
+        junit:junit
+        androidx.junit:androidx.junit
+        androidx.espresso:espresso-core
+        androidx.compose:compose-bom (BOM)
+        androidx.ui:ui-test-junit4
+        androidx.ui:ui-tooling
+        androidx.ui:ui-test-manifest
+        com.google.android.gms:play-services-ads
+</string>
+    <string name="close_button">Close</string>
+
+    <!-- High Accuracy Mode -->
+    <string name="high_accuracy_mode">High Accuracy Mode</string>
+</resources>

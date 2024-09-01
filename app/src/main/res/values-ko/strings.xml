@@ -1,0 +1,64 @@
+<resources>
+    <!-- App Bar Title -->
+    <string name="app_name">정중함의 대명사</string>
+
+    <!-- Text Field Labels -->
+    <string name="input_label">그럭저럭한 텍스트 입력하세요 (%1$d)</string>
+    <string name="output_label">수정된 텍스트 (%1$d)</string>
+    <string name="input_label_no_input">그럭저럭한 텍스트 입력하세요</string>
+    <string name="output_label_no_input">수정된 텍스트</string>
+    <string name="can_mistakes">LLM은 실수를 할 수 있습니다. 응답을 다시 확인해 주세요.</string>
+
+
+    <!-- Button Text -->
+    <string name="execute_button">실행</string>
+
+    <!-- Icon Button Descriptions -->
+    <string name="clear_description">지우기</string>
+    <string name="paste_description">붙여넣기</string>
+    <string name="copy_description">복사하기</string>
+
+    <!-- Toast Message -->
+    <string name="copied_toast">클립보드에 복사됨</string>
+    <string name="close_button">닫기</string>
+
+    <string name="popup_text">
+        개인정보 보호정책
+        1. 데이터 수집 및 사용
+        이 앱은 Google의 LLM(Gemini) 및 AdMob을 사용합니다. 이러한 서비스는 앱 기능 제공 및 광고 표시를 위해 데이터를 수집할 수 있지만, 우리는 다른 목적으로 사용자 데이터를 수집하지 않습니다.
+
+        2. 개인 정보 처리
+        개발자 및 관련자는 사용자의 개인 정보나 제출된 콘텐츠를 수집하지 않습니다.
+
+        3. Google의 개인정보 및 광고
+        Gemini: 텍스트 생성은 Google의 Gemini를 통해 이루어집니다. Gemini의 개인정보 보호정책을 참조하십시오.
+        AdMob: 광고를 표시하기 위해 AdMob을 사용합니다. AdMob의 개인정보 보호정책을 참조하십시오.
+
+        오픈 소스 소프트웨어 관련:
+        이 앱은 다음 오픈 소스 소프트웨어를 사용하며, 각 라이선스에 따라 사용됩니다.
+        androidx.core:core-ktx
+        androidx.lifecycle:lifecycle-runtime-ktx
+        androidx.activity:activity-compose
+        androidx.compose:compose-bom (BOM)
+        androidx.ui:ui
+        androidx.ui:ui-graphics
+        androidx.ui:ui-tooling-preview
+        androidx.material3:material3
+        androidx.lifecycle:lifecycle-viewmodel-compose
+        androidx.runtime:livedata
+        billing
+        generativeai:generative-ai
+        junit:junit
+        androidx.junit:androidx.junit
+        androidx.espresso:espresso-core
+        androidx.compose:compose-bom (BOM)
+        androidx.ui:ui-test-junit4
+        androidx.ui:ui-tooling
+        androidx.ui:ui-test-manifest
+        com.google.android.gms:play-services-ads
+</string>
+
+
+    <!-- High Accuracy Mode -->
+    <string name="high_accuracy_mode">고정밀 모드</string>
+</resources>

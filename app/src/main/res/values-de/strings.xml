@@ -1,0 +1,64 @@
+<resources>
+    <!-- App Bar Title -->
+    <string name="app_name">Herr Höflichkeit</string>
+
+    <!-- Text Field Labels -->
+    <string name="input_label">Gib deinen nicht so tollen Text ein (%1$d)</string>
+    <string name="output_label">Korrigierter Text (%1$d)</string>
+    <string name="input_label_no_input">Gib deinen nicht so tollen Text ein</string>
+    <string name="output_label_no_input">Korrigierter Text</string>
+    <string name="can_mistakes">LLM kann Fehler machen. Bitte überprüfen Sie die Antworten erneut.</string>
+
+
+    <!-- Button Text -->
+    <string name="execute_button">Ausführen</string>
+
+    <!-- Icon Button Descriptions -->
+    <string name="clear_description">Löschen</string>
+    <string name="paste_description">Einfügen</string>
+    <string name="copy_description">Kopieren</string>
+
+    <!-- Toast Message -->
+    <string name="copied_toast">In die Zwischenablage kopiert</string>
+    <string name="close_button">Schließen</string>
+
+    <string name="popup_text">
+        Datenschutzerklärung
+        1. Datenerfassung und -nutzung
+        Diese App verwendet Googles LLM (Gemini) und AdMob. Diese Dienste können Daten sammeln, um die App-Funktionalität bereitzustellen und Werbung anzuzeigen, aber wir sammeln keine Benutzerdaten für andere Zwecke.
+
+        2. Umgang mit persönlichen Informationen
+        Weder der Entwickler noch seine Partner sammeln persönliche Informationen der Nutzer oder eingereichte Inhalte.
+
+        3. Googles Datenschutz und Werbung
+        Gemini: Die Texterstellung erfolgt durch Googles Gemini. Bitte lesen Sie die Datenschutzrichtlinie von Gemini für weitere Details.
+        AdMob: Wir verwenden AdMob zur Anzeige von Werbung. Weitere Informationen finden Sie in der Datenschutzrichtlinie von AdMob.
+
+        Über Open-Source-Software:
+        Diese App verwendet die folgende Open-Source-Software, die unter den jeweiligen Lizenzen genutzt wird.
+        androidx.core:core-ktx
+        androidx.lifecycle:lifecycle-runtime-ktx
+        androidx.activity:activity-compose
+        androidx.compose:compose-bom (BOM)
+        androidx.ui:ui
+        androidx.ui:ui-graphics
+        androidx.ui:ui-tooling-preview
+        androidx.material3:material3
+        androidx.lifecycle:lifecycle-viewmodel-compose
+        androidx.runtime:livedata
+        billing
+        generativeai:generative-ai
+        junit:junit
+        androidx.junit:androidx.junit
+        androidx.espresso:espresso-core
+        androidx.compose:compose-bom (BOM)
+        androidx.ui:ui-test-junit4
+        androidx.ui:ui-tooling
+        androidx.ui:ui-test-manifest
+        com.google.android.gms:play-services-ads
+</string>
+
+
+    <!-- High Accuracy Mode -->
+    <string name="high_accuracy_mode">Hochpräzisionsmodus</string>
+</resources>

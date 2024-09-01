@@ -1,0 +1,64 @@
+<resources>
+    <!-- App Bar Title -->
+    <string name="app_name">礼貌先生</string>
+
+    <!-- Text Field Labels -->
+    <string name="input_label">输入你那糟糕的文本 (%1$d)</string>
+    <string name="output_label">修正后的文本 (%1$d)</string>
+    <string name="input_label_no_input">输入你那糟糕的文本</string>
+    <string name="output_label_no_input">修正后的文本</string>
+    <string name="can_mistakes">LLM 可能会犯错。请再次核对回复。</string>
+
+
+    <!-- Button Text -->
+    <string name="execute_button">执行</string>
+
+    <!-- Icon Button Descriptions -->
+    <string name="clear_description">清除</string>
+    <string name="paste_description">粘贴</string>
+    <string name="copy_description">复制</string>
+
+    <!-- Toast Message -->
+    <string name="copied_toast">已复制到剪贴板</string>
+    <string name="close_button">关闭</string>
+
+    <string name="popup_text">
+        隐私政策
+        1. 数据收集与使用
+        本应用使用Google的LLM（Gemini）和AdMob。这些服务可能会收集数据以提供应用功能和显示广告，但我们不会将用户数据用于其他任何目的。
+
+        2. 个人信息处理
+        开发者及其关联方不会收集用户的个人信息或提交内容。
+
+        3. Google的隐私和广告
+        Gemini：文本生成由Google的Gemini提供支持。请参阅Gemini的隐私政策了解更多详情。
+        AdMob：我们使用AdMob显示广告。请参阅AdMob的隐私政策了解更多信息。
+
+        关于开源软件：
+        本应用使用以下开源软件，并根据其各自的许可证进行使用。
+        androidx.core:core-ktx
+        androidx.lifecycle:lifecycle-runtime-ktx
+        androidx.activity:activity-compose
+        androidx.compose:compose-bom (BOM)
+        androidx.ui:ui
+        androidx.ui:ui-graphics
+        androidx.ui:ui-tooling-preview
+        androidx.material3:material3
+        androidx.lifecycle:lifecycle-viewmodel-compose
+        androidx.runtime:livedata
+        billing
+        generativeai:generative-ai
+        junit:junit
+        androidx.junit:androidx.junit
+        androidx.espresso:espresso-core
+        androidx.compose:compose-bom (BOM)
+        androidx.ui:ui-test-junit4
+        androidx.ui:ui-tooling
+        androidx.ui:ui-test-manifest
+        com.google.android.gms:play-services-ads
+</string>
+
+
+    <!-- High Accuracy Mode -->
+    <string name="high_accuracy_mode">高精度模式</string>
+</resources>
