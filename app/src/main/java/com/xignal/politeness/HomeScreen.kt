@@ -46,30 +46,59 @@ fun HomeScreen(llmModel: LLMModel = viewModel()) {
     Scaffold(
         topBar = { HomeTopBar(onMenuClick = { homeScreenState.showPopup = true }) }
     ) { innerPadding ->
-        HomeContent(
-            state = homeScreenState,
-            onInputTextChange = { homeScreenState.inputText = it },
-            onClearInput = { homeScreenState.inputText = "" },
-            onPasteInput = { homeScreenState.inputText += clipboardManager.getText().toString() },
-            onCopyOutput = {
-                clipboardManager.setText(AnnotatedString(homeScreenState.outputText))
-                coroutineScope.launch {
-                    android.widget.Toast.makeText(context, copied, android.widget.Toast.LENGTH_SHORT).show()
-                }
-            },
-            onHighAccuracyModeChange = { homeScreenState.isHighAccuracyMode = it },
-            onExecute = {
-                homeScreenState.showProgress = true
-                executePoliteTextGeneration(homeScreenState, context, llmModel)
-            },
+        Box(
             modifier = Modifier
                 .fillMaxSize()
                 .padding(innerPadding)
-                .padding(16.dp)
-        )
-
-        if (homeScreenState.showPopup) {
-            PopupDialog(onDismiss = { homeScreenState.showPopup = false })
+                .padding(8.dp)
+        ) {
+            Column(
+                modifier = Modifier
+                    .fillMaxSize()
+                    .padding(8.dp)
+                    .imePadding(), // キーボード表示時にパディングを追加
+                verticalArrangement = Arrangement.spacedBy(8.dp)
+            ) {
+                TextFields(
+                    inputText = homeScreenState.inputText,
+                    outputText = homeScreenState.outputText,
+                    onInputTextChange = { homeScreenState.inputText = it },
+                    onClearInput = { homeScreenState.inputText = "" },
+                    onPasteInput = { homeScreenState.inputText += clipboardManager.getText().toString() },
+                    onCopyOutput = {
+                        clipboardManager.setText(AnnotatedString(homeScreenState.outputText))
+                        coroutineScope.launch {
+                            android.widget.Toast.makeText(context, copied, android.widget.Toast.LENGTH_SHORT).show()
+                        }
+                    },
+                    modifier = Modifier.weight(1f)
+                )
+                ExecutionControls(
+                    isHighAccuracyMode = homeScreenState.isHighAccuracyMode,
+                    showProgress = homeScreenState.showProgress,
+                    onHighAccuracyModeChange = { homeScreenState.isHighAccuracyMode = it },
+                    onExecute = {
+                        homeScreenState.showProgress = true
+                        executePoliteTextGeneration(homeScreenState, context, llmModel)
+                    }
+                )
+                // 広告バナーの表示
+                AndroidView(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .height(40.dp),
+                    factory = { ctx ->
+                        AdView(ctx).apply {
+                            adUnitId = ""
+                            setAdSize(AdSize.BANNER)
+                            loadAd(AdRequest.Builder().build())
+                        }
+                    }
+                )
+            }
+            if (homeScreenState.showPopup) {
+                PopupDialog(onDismiss = { homeScreenState.showPopup = false })
+            }
         }
     }
 }
@@ -78,19 +107,6 @@ fun HomeScreen(llmModel: LLMModel = viewModel()) {
 @Composable
 fun HomeTopBar(onMenuClick: () -> Unit) {
     Column(modifier = Modifier.fillMaxWidth()) {
-        // 広告バナーの表示
-        AndroidView(
-            modifier = Modifier
-                .fillMaxWidth()
-                .height(50.dp),
-            factory = { ctx ->
-                AdView(ctx).apply {
-                    adUnitId = ""
-                    setAdSize(AdSize.BANNER)
-                    loadAd(AdRequest.Builder().build())
-                }
-            }
-        )
         // トップバーの設定
         CenterAlignedTopAppBar(
             title = { Text(stringResource(id = R.string.app_name)) },
@@ -102,39 +118,6 @@ fun HomeTopBar(onMenuClick: () -> Unit) {
                     )
                 }
             }
-        )
-    }
-}
-
-@Composable
-fun HomeContent(
-    state: HomeScreenState,
-    onInputTextChange: (String) -> Unit,
-    onClearInput: () -> Unit,
-    onPasteInput: () -> Unit,
-    onCopyOutput: () -> Unit,
-    onHighAccuracyModeChange: (Boolean) -> Unit,
-    onExecute: () -> Unit,
-    modifier: Modifier = Modifier
-) {
-    Column(
-        modifier = modifier,
-        verticalArrangement = Arrangement.spacedBy(16.dp)
-    ) {
-        TextFields(
-            inputText = state.inputText,
-            outputText = state.outputText,
-            onInputTextChange = onInputTextChange,
-            onClearInput = onClearInput,
-            onPasteInput = onPasteInput,
-            onCopyOutput = onCopyOutput,
-            modifier = Modifier.weight(1f)
-        )
-        ExecutionControls(
-            isHighAccuracyMode = state.isHighAccuracyMode,
-            showProgress = state.showProgress,
-            onHighAccuracyModeChange = onHighAccuracyModeChange,
-            onExecute = onExecute
         )
     }
 }
@@ -284,7 +267,7 @@ fun PopupDialog(onDismiss: () -> Unit) {
         ) {
             Column(
                 modifier = Modifier
-                    .padding(16.dp)
+                    .padding(8.dp)
                     .fillMaxWidth()
                     .verticalScroll(rememberScrollState()),
                 horizontalAlignment = Alignment.CenterHorizontally

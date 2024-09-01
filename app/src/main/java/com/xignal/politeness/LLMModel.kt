@@ -51,7 +51,7 @@ class LLMModel(application: Application) : AndroidViewModel(application) {
                 // JSONレスポンスの解析
                 val jsonResponse = response.text ?: throw Exception("No response generated")
                 val jsonObject = JSONObject(jsonResponse)
-                val output = jsonObject.getString("output(Corrected text)")
+                val output = jsonObject.getString("output(corrected)")
                 onResult(output)
             } catch (e: Exception) {
                 onResult("Error: ${e.message}")
@@ -60,10 +60,10 @@ class LLMModel(application: Application) : AndroidViewModel(application) {
     }
 
     private fun buildPrompt(input: String) = """
-        Please rewrite the following sentences into polite expressions that can be used appropriately in business situations. Maintain the meaning of the original sentence as much as possible. Determine the language of the input text. Only make corrections. Respond in the same language as the input text. If the sentence is already polite, leave it as is. Provide only one response.
+        Please rewrite the following sentences into polite expressions that can be used appropriately in business situations. Maintain the meaning of the original sentence as much as possible. Determine the language of the input text. Only make corrections. Respond in the same language as the input text. If the sentence is already polite, leave it as is. 
 
         Use this JSON schema:
-        PoliteResponse = {'output(Corrected text)': string}
+        PoliteResponse = {'output(corrected)': string}
         Return: PoliteResponse
 
         Input: $input

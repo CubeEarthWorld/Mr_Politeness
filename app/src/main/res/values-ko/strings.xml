@@ -1,6 +1,6 @@
 <resources>
     <!-- App Bar Title -->
-    <string name="app_name">정중함의 대명사</string>
+    <string name="app_name">경어로 번역</string>
 
     <!-- Text Field Labels -->
     <string name="input_label">그럭저럭한 텍스트 입력하세요 (%1$d)</string>
